@@ -1,0 +1,50 @@
+.inputForm{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+label{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: gray;
+}
+
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid[leave="true"],
+textarea:invalid[leave="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[leave="true"] ~ span,
+textarea:invalid[leave="true"] ~ span{
+    display: block;
+}
+
+textarea{
+    margin-block: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 415px;
+    max-height: 300px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    font-size: 16px;
+}

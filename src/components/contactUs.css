@@ -1,0 +1,28 @@
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 60px;
+    margin-bottom: 0.5em;
+}
+
+h1{
+    color: rgb(58, 24, 7);
+}
+
+.btn{
+    width: 50%;
+}
+
+@media(max-width: 400px){
+    .contactUs{
+        height: 100vh;
+        justify-content: center;
+    }
+    .btn{
+        height: 60px;
+    }
+}
